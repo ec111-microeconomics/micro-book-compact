@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; Gains from Trade – Introductory Microeconomics: Definitions and Worked Examples</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch03.html" rel="next">
+<link href="./ch01.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3a469e048faaabd8b3633329316bc3a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+window.MathJax = { output: { displayOverflow: 'linebreak',
+  linebreaks: { inline: true, width: '100%' } } };
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch02.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Gains from Trade</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Introductory Microeconomics: Definitions and Worked Examples</a> 
+        <div class="sidebar-tools-main">
+    <a href="./introductory-microeconomics-compact.pdf" title="The book as a PDF" class="quarto-navigation-tool px-1" aria-label="The book as a PDF"><i class="bi bi-file-earmark-pdf"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introductory Microeconomics: Definitions and Worked Examples</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Scarcity, Choice and the Frontier</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Gains from Trade</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Supply and Demand</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Elasticity</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Price Controls and Taxes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Market Efficiency</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Externalities</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Public Goods and Common Resources</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Public Choice</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Production and Costs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Firms in Competitive Markets</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Monopoly</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Oligopoly</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Monopolistic Competition</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Consumer Choice</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch16.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Asymmetric Information</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch17.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Modern Data Analysis in Economics</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">In this chapter</h2>
+   
+  <ul>
+  <li><a href="#definitions" id="toc-definitions" class="nav-link active" data-scroll-target="#definitions"><span class="header-section-number">2.1</span> Definitions</a></li>
+  <li><a href="#worked-examples" id="toc-worked-examples" class="nav-link" data-scroll-target="#worked-examples"><span class="header-section-number">2.2</span> Worked examples</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-interdependence-trade" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Gains from Trade</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="definitions" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="definitions"><span class="header-section-number">2.1</span> Definitions</h2>
+<div class="concept">
+<p><strong>Specialization and exchange.</strong> Agents concentrate their production on a narrow range of goods and get the rest by exchange. Nobody produces everything they consume.</p>
+</div>
+<p>Consider Smith’s pin workshop, where ten men who divide the work between them make upwards of forty-eight thousand pins in a day. A man who makes only pins must get his food, clothing and shelter from others, so he specializes and he exchanges.</p>
+<div class="concept">
+<p><strong>Absolute advantage.</strong> Producing a good with fewer inputs than another producer does. It is a direct comparison of productivities.</p>
+</div>
+<p>Suppose a unit of cloth takes 100 hours of labor in England and 90 in Portugal, and a unit of wine takes 120 hours in England and 80 in Portugal. Portugal needs fewer hours for both goods, so it has the absolute advantage in both.</p>
+<div class="concept">
+<p><strong>Comparative advantage.</strong> Producing a good at a lower opportunity cost than another producer does.</p>
+</div>
+<p>A unit of wine costs Portugal 0.89 units of cloth and costs England 1.20, so Portugal has the comparative advantage in wine. A unit of cloth costs England 0.83 units of wine and costs Portugal 1.125, so England has the comparative advantage in cloth, even though it needs more hours than Portugal for both goods.</p>
+<div class="concept">
+<p><strong>Autarky.</strong> The absence of trade. A country consumes precisely what it produces, so its production frontier is also its consumption frontier.</p>
+</div>
+<p>Suppose England puts 1,800 hours into each good. It then makes 18 units of cloth and 15 of wine, and under autarky that is exactly what it consumes.</p>
+<div class="concept">
+<p><strong>Specialization raises world output.</strong> Now suppose all of each country’s labor moves into the good in which that country holds the comparative advantage. England then produces <span class="math inline">\(3600/100 = 36\)</span> units of cloth and no wine. Portugal produces <span class="math inline">\(2880/80 = 36\)</span> units of wine and no cloth. World output is now 36 units of cloth and 36 of wine, against 34 and 33 under autarky.</p>
+</div>
+<p>Here England has 3,600 hours of labor and Portugal 2,880, and the autarky figures suppose that each country splits its hours equally between the two goods. So world output rises by two units of cloth and three of wine, and no hour of labor has been added.</p>
+<div class="concept">
+<p><strong>Terms of trade.</strong> The rate at which the two goods exchange once trade opens. Let <span class="math inline">\(p\)</span> be the price of one unit of wine in units of cloth. There is no money in the model, so a price is a ratio between goods.</p>
+<p>Portugal sells wine, and it will not accept less than its own cost of producing wine. That requires <span class="math inline">\(p &gt; \tfrac{8}{9} \approx 0.89\)</span>. England buys wine, and it will not pay more than its own cost of producing wine, which requires <span class="math inline">\(p &lt; 1.20\)</span>. Both conditions hold only within <span class="math display">\[\tfrac{8}{9} &lt; p &lt; 1.20 .\]</span></p>
+</div>
+<p>Suppose 17 units of wine trade for 17 units of cloth, so that <span class="math inline">\(p = 1\)</span>. That price is above Portugal’s cost of 0.89 units of cloth and below England’s cost of 1.20, so both countries accept it.</p>
+<div class="concept">
+<p><strong>Consumption beyond the frontier.</strong> With trade, a country’s consumption point may lie outside its own production frontier. Production is still bounded by the frontier. Consumption is bounded by what the country produces together with what that production can be exchanged for.</p>
+</div>
+<p>After trade England consumes 19 units of cloth and 17 of wine. Its own frontier allows only 15.6 units of cloth at 17 units of wine, so England is consuming a bundle that it could not have produced.</p>
+</section>
+<section id="worked-examples" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="worked-examples"><span class="header-section-number">2.2</span> Worked examples</h2>
+<div class="example">
+<p><strong>Hours of labor required per unit.</strong></p>
+<div class="center">
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Cloth</th>
+<th style="text-align: center;">Wine</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>England</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">120</td>
+</tr>
+<tr class="even">
+<td>Portugal</td>
+<td style="text-align: center;">90</td>
+<td style="text-align: center;">80</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Each entry is a cost, so a larger number means worse performance. Portugal needs fewer hours than England for cloth, 90 against 100. It also needs fewer for wine, 80 against 120. So Portugal is the more productive country in both goods.</p>
+<p>Ricardo states these requirements as the labor of a given number of men for one year. Here they are read as hours. That changes nothing, because only the ratios between the four figures do any work.</p>
+</div>
+<p>Ricardo gave labor requirements but did not say how much labor each country had. Labor requirements fix the slope of a frontier but not its position, so the two endowments must be supplied here: England 3,600 hours and Portugal 2,880. These may be read as ten workers against eight. The figures are chosen so that the outputs derived below come out as whole numbers. The pattern of comparative advantage does not depend on them, although the output figures do.</p>
+<div class="model">
+<p><strong>The two frontiers.</strong> Labor put into cloth plus labor put into wine uses up the whole available supply. For England, <span class="math display">\[100C + 120W = 3600 \quad\Longrightarrow\quad C = 36 - 1.2\,W .\]</span> And for Portugal, <span class="math display">\[90C + 80W = 2880 \quad\Longrightarrow\quad C = 32 - \tfrac{8}{9}\,W .\]</span> So England can produce at most 36 units of cloth or 30 of wine. For Portugal the limits are 32 units of cloth or 36 of wine.</p>
+</div>
+<p>Both frontiers are straight lines. The slope of each one is that country’s opportunity cost of wine, measured in cloth.</p>
+<div id="fig-c02-frontiers" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-c02-frontiers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figures/ch02-fig01.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;2.1: The two frontiers. England’s is the steeper, so that wine is expensive to England in terms of cloth. Neither frontier lies wholly inside the other."><img src="figures/ch02-fig01.svg" class="img-fluid figure-img" style="width:80.1%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-c02-frontiers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: The two frontiers. England’s is the steeper, so that wine is expensive to England in terms of cloth. Neither frontier lies wholly inside the other.
+</figcaption>
+</figure>
+</div>
+<div class="example">
+<p><strong>Opportunity costs derived for both countries.</strong> Start with England. One unit of wine takes 120 hours. Those 120 hours would otherwise have produced <span class="math inline">\(120/100 = 1.2\)</span> units of cloth. Therefore <span class="math display">\[\text{England: 1 wine costs } \tfrac{120}{100} = 1.20 \text{ cloth} .\]</span> Now run the same calculation the other way. One unit of cloth takes 100 hours, and those hours would otherwise have produced <span class="math inline">\(100/120\)</span> units of wine: <span class="math display">\[\text{England: 1 cloth costs } \tfrac{100}{120} \approx 0.83 \text{ wine} .\]</span> For Portugal, one unit of wine takes 80 hours, which would otherwise have produced <span class="math inline">\(80/90\)</span> units of cloth. One unit of cloth takes 90 hours, which would otherwise have produced <span class="math inline">\(90/80\)</span> units of wine: <span class="math display">\[\text{Portugal: 1 wine costs } \tfrac{80}{90} \approx 0.89 \text{ cloth} ,
+  \qquad
+  \text{1 cloth costs } \tfrac{90}{80} = 1.125 \text{ wine} .\]</span></p>
+<div class="center">
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">1 wine costs (cloth)</th>
+<th style="text-align: center;">1 cloth costs (wine)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>England</td>
+<td style="text-align: center;"><span class="math inline">\(120 \div 100 = 1.20\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(100 \div 120 \approx 0.83\)</span></td>
+</tr>
+<tr class="even">
+<td>Portugal</td>
+<td style="text-align: center;"><span class="math inline">\(\phantom{0}80 \div \phantom{0}90 \approx 0.89\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\phantom{0}90 \div \phantom{0}80 = 1.125\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The two entries in each row are reciprocals, since <span class="math inline">\(1.20 \times 0.83 \approx 1\)</span> and <span class="math inline">\(0.89 \times 1.125 \approx 1\)</span>. That is arithmetic rather than coincidence. With two goods and one resource, the cost of cloth in terms of wine and the cost of wine in terms of cloth are two readings of a single ratio. So a country that finds one good expensive necessarily finds the other cheap.</p>
+<p>The wine column reproduces the slopes of the two frontiers in Figure&nbsp;<a href="#fig-c02-frontiers" class="quarto-xref"><span>2.1</span></a>, 1.20 and <span class="math inline">\(\tfrac{8}{9}\)</span>. Again this is arithmetic, since the slope of a frontier is an opportunity cost. The cloth column holds their reciprocals.</p>
+</div>
+<p>We need a baseline against which a gain can be measured. Suppose each country splits its labor equally between the two goods: England puts 1,800 hours into each, and Portugal 1,440 into each. This split is assumed rather than derived. The pattern of comparative advantage does not depend on it, although the size of the gains reported below does.</p>
+<div class="example">
+<p><strong>Autarky output.</strong></p>
+<div class="center">
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Cloth</th>
+<th style="text-align: center;">Wine</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>England</td>
+<td style="text-align: center;"><span class="math inline">\(1800/100 = 18\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1800/120 = 15\)</span></td>
+</tr>
+<tr class="even">
+<td>Portugal</td>
+<td style="text-align: center;"><span class="math inline">\(1440/90 = 16\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1440/80 = 18\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>World</strong></td>
+<td style="text-align: center;"><strong>34</strong></td>
+<td style="text-align: center;"><strong>33</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>England may be checked against its frontier, <span class="math inline">\(36 - 1.2(15) = 18\)</span>, and Portugal against its own, <span class="math inline">\(32 - \tfrac{8}{9}(18) = 16\)</span>. Both countries are on their frontiers, since each uses all of its labor. Gains to the world are measured against 34 units of cloth and 33 of wine. Gains to each country are measured against its own row.</p>
+</div>
+<p>Set <span class="math inline">\(p = 1\)</span>, so one unit of cloth trades for one of wine. That price lies inside the band, and it gives whole numbers.</p>
+<div class="example">
+<p><strong>The volume exchanged.</strong> Let <span class="math inline">\(X\)</span> be the number of units exchanged. England keeps <span class="math inline">\(36 - X\)</span> units of cloth and receives <span class="math inline">\(X\)</span> units of wine. Portugal keeps <span class="math inline">\(36 - X\)</span> units of wine and receives <span class="math inline">\(X\)</span> units of cloth.</p>
+<p>England improves on autarky if <span class="math inline">\(36 - X &gt; 18\)</span> and <span class="math inline">\(X &gt; 15\)</span>, which requires <span class="math inline">\(15 &lt; X &lt; 18\)</span>. Portugal improves on autarky if <span class="math inline">\(X &gt; 16\)</span> and <span class="math inline">\(36 - X &gt; 18\)</span>, which requires <span class="math inline">\(16 &lt; X &lt; 18\)</span>. So both conditions hold when <span class="math inline">\(16 &lt; X &lt; 18\)</span>. Take <span class="math inline">\(X = 17\)</span>.</p>
+</div>
+<div class="result">
+<p><strong>The outcome.</strong></p>
+<div class="center">
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Cloth made</th>
+<th style="text-align: center;">Cloth consumed</th>
+<th style="text-align: center;">Wine made</th>
+<th style="text-align: center;">Wine consumed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>England</td>
+<td style="text-align: center;">36</td>
+<td style="text-align: center;"><span class="math inline">\(36-17=19\)</span></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><span class="math inline">\(0+17=17\)</span></td>
+</tr>
+<tr class="even">
+<td>Portugal</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><span class="math inline">\(0+17=17\)</span></td>
+<td style="text-align: center;">36</td>
+<td style="text-align: center;"><span class="math inline">\(36-17=19\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Before trade, England had 18 units of cloth and 15 of wine. Now it has 19 and 17 (Figure&nbsp;<a href="#fig-c02-england" class="quarto-xref"><span>2.2</span></a>). Portugal had 16 and 18, and now has 17 and 19. Each country has more of both goods, and neither has worked a single extra hour.</p>
+</div>
+<div id="fig-c02-england" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-c02-england-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figures/ch02-fig02.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2.2: England. Production remains at the cloth intercept, while consumption moves beyond the frontier along the trade line."><img src="figures/ch02-fig02.svg" class="img-fluid figure-img" style="width:80.1%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-c02-england-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2: England. Production remains at the cloth intercept, while consumption moves beyond the frontier along the trade line.
+</figcaption>
+</figure>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./ch01.html" class="pagination-link" aria-label="Scarcity, Choice and the Frontier">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Scarcity, Choice and the Frontier</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch03.html" class="pagination-link" aria-label="Supply and Demand">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Supply and Demand</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>

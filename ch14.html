@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>14&nbsp; Monopolistic Competition – Introductory Microeconomics: Definitions and Worked Examples</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch15.html" rel="next">
+<link href="./ch13.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3a469e048faaabd8b3633329316bc3a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+window.MathJax = { output: { displayOverflow: 'linebreak',
+  linebreaks: { inline: true, width: '100%' } } };
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch14.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Monopolistic Competition</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Introductory Microeconomics: Definitions and Worked Examples</a> 
+        <div class="sidebar-tools-main">
+    <a href="./introductory-microeconomics-compact.pdf" title="The book as a PDF" class="quarto-navigation-tool px-1" aria-label="The book as a PDF"><i class="bi bi-file-earmark-pdf"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introductory Microeconomics: Definitions and Worked Examples</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Scarcity, Choice and the Frontier</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Gains from Trade</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Supply and Demand</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Elasticity</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Price Controls and Taxes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Market Efficiency</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Externalities</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Public Goods and Common Resources</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Public Choice</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Production and Costs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Firms in Competitive Markets</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Monopoly</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Oligopoly</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch14.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Monopolistic Competition</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Consumer Choice</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch16.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Asymmetric Information</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch17.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Modern Data Analysis in Economics</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">In this chapter</h2>
+   
+  <ul>
+  <li><a href="#definitions" id="toc-definitions" class="nav-link active" data-scroll-target="#definitions"><span class="header-section-number">14.1</span> Definitions</a></li>
+  <li><a href="#worked-examples" id="toc-worked-examples" class="nav-link" data-scroll-target="#worked-examples"><span class="header-section-number">14.2</span> Worked examples</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-monopolistic-competition" class="quarto-section-identifier"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Monopolistic Competition</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="definitions" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="definitions"><span class="header-section-number">14.1</span> Definitions</h2>
+<div class="concept">
+<p><strong>Monopolistic competition.</strong> A market in which there are many sellers, the products are differentiated, and firms are free to enter and exit.</p>
+</div>
+<p>Consider a coffee roaster in a city of two hundred roasters, each with its own blend, its own shop and its own customers. Its output <span class="math inline">\(q\)</span> is measured in thousands of pounds a year, its price <span class="math inline">\(P\)</span> in dollars a pound, and its total cost is <span class="math inline">\(TC = 144 + 10q + q^{2}\)</span> in thousands of dollars a year.</p>
+<div class="concept">
+<p><strong>What makes the demand curve slope down.</strong> The firm’s demand curve slopes down because its product is distinguishable from the others, not because it is the only seller. If a firm raises its price above every rival’s, it loses some of its customers rather than all of them. The ones who stay are those who preferred this seller by more than the amount of the price rise.</p>
+</div>
+<p>The roaster faces its own demand curve <span class="math inline">\(P = A - 3q\)</span>, so to sell one thousand pounds more it has to cut its price by $3. A price taker would need no price cut at all.</p>
+<div class="concept">
+<p><strong>Four steps, in this order.</strong> First, set marginal revenue equal to marginal cost and solve for the quantity. Second, take that quantity up to the <em>demand</em> curve to find the price. Third, take the same quantity up to average total cost to find the cost per unit. Finally, profit is price minus average total cost, multiplied by the quantity.</p>
+</div>
+<p>With demand at <span class="math inline">\(P = 74 - 3q\)</span>, so that <span class="math inline">\(MR = 74 - 6q\)</span>, and <span class="math inline">\(MC = 10 + 2q\)</span>, the roaster produces <span class="math inline">\(q = 8\)</span> at a price of 50, its average total cost is 36, and its profit is <span class="math inline">\((50 - 36) \times 8 = 112\)</span>. With demand at <span class="math inline">\(P = 42 - 3q\)</span> the same steps give <span class="math inline">\(q = 4\)</span>, a price of 30 and average total cost of 50, so it loses <span class="math inline">\((30 - 50) \times 4 = -80\)</span>.</p>
+<div class="concept">
+<p><strong>Entry and exit move the firm’s own demand curve.</strong> Fewer customers at every price means the demand curve has shifted left. Read the other way, the firm must now charge less to sell any given quantity. Losses run the same mechanism backwards. When a roaster closes, its customers still want coffee, and they spread themselves among the shops that remain. So every surviving firm has more customers at any given price, and that pushes the intercept back up. The cost function does not move, whether firms are entering or leaving.</p>
+</div>
+<p>Entry moves the roaster’s intercept from 74 down to 58, a fall of $16 at every quantity. At six units it could charge <span class="math inline">\(74 - 18 = 56\)</span> before entry and only <span class="math inline">\(58 - 18 = 40\)</span> after it.</p>
+<div class="concept">
+<p><strong>Excess capacity.</strong> The gap between the output a firm produces and its efficient scale.</p>
+</div>
+<p>In the long run the roaster produces 6 thousand pounds a year, and its efficient scale is 12, so its excess capacity is <span class="math inline">\(12 - 6 = 6\)</span>. Its average total cost is 40 where it could be 34.</p>
+<div class="concept">
+<p><strong>The markup.</strong> Price minus marginal cost.</p>
+</div>
+<p>At its long-run position the roaster charges 40 and its last unit costs 22, so the markup is <span class="math inline">\(40 - 22 = 18\)</span> dollars a pound. A price-taking firm with the same costs charges 34 for a last unit that costs 34, a markup of nothing.</p>
+<div class="concept">
+<p><strong>Against perfect competition and monopoly.</strong> Monopolistic competition shares free entry with perfect competition, along with its consequence, zero economic profit in the long run. It shares a downward-sloping demand curve with monopoly, along with its consequences: marginal revenue below price, and therefore a price above marginal cost.</p>
+</div>
+<p>With the roaster’s costs, perfect competition gives a quantity of 12 at a price of 34, and monopolistic competition gives 6 at a price of 40. Profit is zero in both, which is why the differences between them are not about profit.</p>
+<div class="concept">
+<p><strong>Advertising as a signal.</strong> The content of an advertisement may say nothing useful, and yet the willingness to spend on it can still be informative. Advertising separates good firms from poor ones when the customers it wins come back. A firm that expects repeat purchases can recoup a cost that a firm selling something poor, which makes just one sale, cannot.</p>
+</div>
+<p>A firm whose customer is worth $60 over all the repeat purchases will pay $20 to win one. A firm whose customer is worth $6 will not, so the campaign itself tells the buyer which kind of firm is selling.</p>
+<div class="concept">
+<p><strong>The product-variety externality.</strong> When a new firm enters with a product of its own, the consumers who prefer that product gain surplus that the entrant does not collect. The entrant charges one price, so buyers who would have paid far more for this particular blend keep the difference.</p>
+</div>
+<p>A customer who values a new roaster’s blend at $70 pays 40 like everyone else and keeps 30 of surplus. None of that 30 is the entrant’s revenue, so it plays no part in the decision to open.</p>
+<div class="concept">
+<p><strong>The business-stealing externality.</strong> When a new firm enters, it takes customers from firms already in the market, and their loss plays no part in its calculation.</p>
+</div>
+<p>A new roaster spends the fixed 144 to open, and some of its sales are the same customers buying from a different shop. That part of its profit is not new output but a loss to the roasters it has never met.</p>
+</section>
+<section id="worked-examples" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="worked-examples"><span class="header-section-number">14.2</span> Worked examples</h2>
+<div class="example">
+<p><strong>Revenue for the roaster.</strong></p>
+<div class="center">
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"><span class="math inline">\(q\)</span></th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">6</th>
+<th style="text-align: center;">7</th>
+<th style="text-align: center;">8</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(P = 58 - 3q\)</span></td>
+<td style="text-align: center;">58</td>
+<td style="text-align: center;">55</td>
+<td style="text-align: center;">52</td>
+<td style="text-align: center;">49</td>
+<td style="text-align: center;">46</td>
+<td style="text-align: center;">43</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">37</td>
+<td style="text-align: center;">34</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(TR = P \times q\)</span></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">55</td>
+<td style="text-align: center;">104</td>
+<td style="text-align: center;">147</td>
+<td style="text-align: center;">184</td>
+<td style="text-align: center;">215</td>
+<td style="text-align: center;">240</td>
+<td style="text-align: center;">259</td>
+<td style="text-align: center;">272</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">added by the unit</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">55</td>
+<td style="text-align: center;">49</td>
+<td style="text-align: center;">43</td>
+<td style="text-align: center;">37</td>
+<td style="text-align: center;">31</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">13</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In the table, only <span class="math inline">\(q\)</span> is given. The price is read off the demand curve, total revenue is price times quantity, and the last row is the difference between one total revenue and the next (Figure&nbsp;<a href="#fig-c14-demand-mr" class="quarto-xref"><span>14.1</span></a>).</p>
+</div>
+<div id="fig-c14-demand-mr" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-c14-demand-mr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figures/ch14-fig01.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;14.1: The firm’s own demand curve and its marginal revenue at A = 58. Both start at 58, and marginal revenue reaches zero at a little over 9 while demand runs on to a little over 19, which is twice as far. The marked gap at six units is 3 \times 6 = 18, the price cut given up on every unit already sold."><img src="figures/ch14-fig01.svg" class="img-fluid figure-img" style="width:78.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-c14-demand-mr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;14.1: The firm’s own demand curve and its marginal revenue at <span class="math inline">\(A = 58\)</span>. Both start at 58, and marginal revenue reaches zero at a little over 9 while demand runs on to a little over 19, which is twice as far. The marked gap at six units is <span class="math inline">\(3 \times 6 = 18\)</span>, the price cut given up on every unit already sold.
+</figcaption>
+</figure>
+</div>
+<div class="example">
+<p><strong>Solving the two conditions together.</strong> Start from <span class="math inline">\(MR = MC\)</span> and leave <span class="math inline">\(A\)</span> unknown: <span class="math display">\[A - 6q = 10 + 2q \;\Longrightarrow\; A - 10 = 8q \;\Longrightarrow\;
+  A = 8q + 10 .\]</span> Every position in this chapter satisfies this equation: <span class="math inline">\(q = 8\)</span> gives <span class="math inline">\(A = 74\)</span>, <span class="math inline">\(q = 6\)</span> gives <span class="math inline">\(A = 58\)</span>, and <span class="math inline">\(q = 4\)</span> gives <span class="math inline">\(A = 42\)</span>.</p>
+<p>Next, from <span class="math inline">\(P = ATC\)</span>:</p>
+<p><span id="eq-c14-zero-profit-intercept"><span class="math display">\[
+A - 3q = \frac{144}{q} + 10 + q \;\Longrightarrow\;
+  A = \frac{144}{q} + 10 + 4q .
+\tag{14.1}\]</span></span></p>
+<p>At <span class="math inline">\(q = 4\)</span> this requires <span class="math inline">\(A = 36 + 10 + 16 = 62\)</span>, but the loss-making firm had <span class="math inline">\(A = 42\)</span>. The shortfall of 20 is exactly the loss per unit that we found there, <span class="math inline">\(ATC(4) - P = 50 - 30 = 20\)</span>. So Equation&nbsp;(<a href="#eq-c14-zero-profit-intercept" class="quarto-xref"><span>14.1</span></a>) does more than agree with that arithmetic. It reproduces it.</p>
+<p>Now set the expression for <span class="math inline">\(A\)</span> from <span class="math inline">\(MR = MC\)</span> equal to Equation&nbsp;(<a href="#eq-c14-zero-profit-intercept" class="quarto-xref"><span>14.1</span></a>). The 10 cancels from both sides, and <span class="math inline">\(4q\)</span> comes off both sides too, leaving</p>
+<p><span id="eq-c14-long-run-output"><span class="math display">\[
+4q = \frac{144}{q} \;\Longrightarrow\; 4q^{2} = 144 \;\Longrightarrow\;
+  q^{2} = 36 \;\Longrightarrow\; q = 6 ,
+\tag{14.2}\]</span></span></p>
+<p>taking the positive root, because a negative quantity means nothing. Substituting back, the first equation gives <span class="math inline">\(A = 8(6) + 10 = 58\)</span>, and Equation&nbsp;(<a href="#eq-c14-zero-profit-intercept" class="quarto-xref"><span>14.1</span></a>) gives <span class="math inline">\(A = 24 + 10 + 24 = 58\)</span>. The two equations were independent of each other, so the fact that they agree is a check on the answer.</p>
+</div>
+<div class="example">
+<p><strong>The same result, from the profit column.</strong> The table uses <span class="math inline">\(P = 58 - 3q\)</span> and <span class="math inline">\(TC = 144 + 10q + q^{2}\)</span>:</p>
+<div class="center">
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"><span class="math inline">\(q\)</span></th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">6</th>
+<th style="text-align: center;">7</th>
+<th style="text-align: center;">8</th>
+<th style="text-align: center;">9</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(P\)</span></td>
+<td style="text-align: center;">49</td>
+<td style="text-align: center;">46</td>
+<td style="text-align: center;">43</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">37</td>
+<td style="text-align: center;">34</td>
+<td style="text-align: center;">31</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(TR\)</span></td>
+<td style="text-align: center;">147</td>
+<td style="text-align: center;">184</td>
+<td style="text-align: center;">215</td>
+<td style="text-align: center;">240</td>
+<td style="text-align: center;">259</td>
+<td style="text-align: center;">272</td>
+<td style="text-align: center;">279</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(TC\)</span></td>
+<td style="text-align: center;">183</td>
+<td style="text-align: center;">200</td>
+<td style="text-align: center;">219</td>
+<td style="text-align: center;">240</td>
+<td style="text-align: center;">263</td>
+<td style="text-align: center;">288</td>
+<td style="text-align: center;">315</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">profit</td>
+<td style="text-align: center;"><span class="math inline">\(-36\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-16\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-4\)</span></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><span class="math inline">\(-4\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-16\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-36\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The best the firm can do is to make exactly nothing, and it does that at 6. The profit row is symmetric about 6, and it is never positive, because <span class="math display">\[(58 - 3q)q - (144 + 10q + q^{2}) = -4q^{2} + 48q - 144 = -4(q - 6)^{2} ,\]</span> which is zero at <span class="math inline">\(q = 6\)</span> and negative everywhere else. A profit function whose maximum is exactly zero, reached at one quantity only, is tangency written in numbers rather than drawn as geometry (Figure&nbsp;<a href="#fig-c14-long-run" class="quarto-xref"><span>14.2</span></a>).</p>
+</div>
+<div id="fig-c14-long-run" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-c14-long-run-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figures/ch14-fig02.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;14.2: The firm in the long run, with the same cost curves as before and only the demand curve moved. The upper black dot at (6, 40) is where the demand curve touches average total cost, so the price equals the cost per unit and the profit rectangle has closed to nothing. The lower black dot is MR = MC at the same quantity. The red dot at (12, 34) is the efficient scale, which the firm does not reach."><img src="figures/ch14-fig02.svg" class="img-fluid figure-img" style="width:75.8%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-c14-long-run-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;14.2: The firm in the long run, with the same cost curves as before and only the demand curve moved. The upper black dot at <span class="math inline">\((6, 40)\)</span> is where the demand curve touches average total cost, so the price equals the cost per unit and the profit rectangle has closed to nothing. The lower black dot is <span class="math inline">\(MR = MC\)</span> at the same quantity. The red dot at <span class="math inline">\((12, 34)\)</span> is the efficient scale, which the firm does not reach.
+</figcaption>
+</figure>
+</div>
+<div class="example">
+<p><strong>The trade that does not happen.</strong> In the long-run position, the firm sells 6 at a price of 40, and its marginal cost there is 22.</p>
+<div class="center">
+<table class="table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">what a buyer would pay for a seventh unit</td>
+<td style="text-align: left;"><span class="math inline">\(58 - 3(7) = 37\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">what a seventh unit costs to make</td>
+<td style="text-align: left;"><span class="math inline">\(TC(7) - TC(6) = 263 - 240 = 23\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">gain if it were made and sold</td>
+<td style="text-align: left;"><span class="math inline">\(37 - 23 = 14\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The seventh thousand pounds is worth 38.5 to its buyers in total, since their valuations run from 40 down to 37. It costs 23 to make. So making it would leave the town 15.5 better off, and yet it is not made. The reason is that the firm does not collect that value. It collects marginal revenue, which is the 37 the new unit sells for, less the $3 it must give up on each of the six existing buyers, or <span class="math inline">\(37 - 18 = 19\)</span>, against a cost of 23. That is a loss of 4, and the profit column above shows exactly <span class="math inline">\(-4\)</span> at <span class="math inline">\(q = 7\)</span>.</p>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./ch13.html" class="pagination-link" aria-label="Oligopoly">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Oligopoly</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch15.html" class="pagination-link" aria-label="Consumer Choice">
+        <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Consumer Choice</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>
