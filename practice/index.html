@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>EC 111 Practice Questions</title>
+<style>
+:root{--blue:#4866C7;--ink:#1E2430;--muted:#6A7280;--panel:#EEF1FA;--line:#D5DAE6;--good:#2E7D5B;--bad:#B3323C;--bg:#ffffff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.55 "Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.7rem;margin:0 0 4px}
+.sub{color:var(--muted);margin:0 0 24px;font-size:.95rem}
+h2{font-size:1.1rem;margin:24px 0 8px}
+label.row{display:flex;gap:10px;align-items:baseline;padding:10px 12px;border:1px solid var(--line);border-radius:6px;margin:6px 0;cursor:pointer}
+label.row small{color:var(--muted);margin-left:auto;white-space:nowrap}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg button{flex:1 1 auto}
+button{font:inherit;padding:10px 16px;border-radius:6px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+button.on{background:var(--blue);border-color:var(--blue);color:#fff}
+button.go{background:var(--blue);border-color:var(--blue);color:#fff;width:100%;margin-top:20px;font-weight:bold}
+button.go:disabled{opacity:.45;cursor:default}
+.meta{color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between;gap:8px;margin-bottom:8px}
+.stem{margin:4px 0 14px}
+table{border-collapse:collapse;margin:0 0 14px}
+th,td{border:1px solid var(--line);padding:4px 12px;text-align:center}
+th{background:var(--panel)}
+.opt{display:block;width:100%;text-align:left;margin:8px 0;padding:12px 14px}
+.opt .l{font-weight:bold;margin-right:8px}
+.opt.wrong{border-color:var(--bad);background:#FBEDEE;color:var(--bad)}
+.opt.right{border-color:var(--good);background:#EAF5EF;color:var(--good)}
+.opt:disabled{cursor:default}
+.msg{font-weight:bold;margin:10px 0}
+.msg.bad{color:var(--bad)} .msg.good{color:var(--good)}
+.why{background:var(--panel);padding:12px 14px;border-radius:6px;margin:10px 0}
+.nav{display:flex;gap:8px;margin-top:16px}
+.nav button{flex:1}
+.score{font-size:1.4rem;font-weight:bold;margin:8px 0}
+a{color:var(--blue)}
+.foot{color:var(--muted);font-size:.85rem;margin-top:32px}
+</style></head>
+<body><main id="app"></main>
+<script>
+const CHAPTERS = [{"chapter": 11, "title": "Public Goods and Common Resources", "questions": [{"id": "E1", "difficulty": "Easy", "type": "mc", "topic": "Rival in consumption", "stem": "Once a customer eats a sandwich bought from a deli, no one else can eat that same sandwich. This feature of the sandwich is called", "options": ["excludability.", "rivalry in consumption.", "the free-rider problem.", "a positive externality."], "answer": 1, "why": "A good is rival in consumption when one person's use of it leaves less for anyone else. A sandwich that has been eaten is gone, so it is rival. Excludability is a different property: whether people who do not pay can be kept from using the good. The free-rider problem arises when a good is not excludable, and a positive externality is a benefit to bystanders. Neither is a property of the sandwich itself.", "key": "ch11-E1"}, {"id": "E2", "difficulty": "Easy", "type": "mc", "topic": "Public goods", "stem": "A radio station broadcasts a free weather forecast. Anyone with a radio can hear it, and one listener tuning in does not reduce what any other listener hears. The forecast is best classified as a", "options": ["private good.", "club good.", "common resource.", "public good."], "answer": 3, "why": "The forecast is not excludable, because anyone with a radio can hear it without paying. It is not rival, because one listener does not reduce what others hear. A good that is neither excludable nor rival is a public good. A private good is both excludable and rival, a club good is excludable but not rival, and a common resource is rival but not excludable.", "key": "ch11-E2"}, {"id": "E3", "difficulty": "Easy", "type": "tf", "topic": "Club goods", "stem": "A video-streaming service that sells monthly subscriptions and has plenty of server capacity is an example of a common resource.", "answer": false, "why": "The service is excludable, because people who do not subscribe are shut out. With plenty of capacity it is not rival, because one more viewer does not slow anyone else down. A good that is excludable but not rival is a club good. A common resource is the opposite case: rival but not excludable.", "key": "ch11-E3"}, {"id": "E4", "difficulty": "Easy", "type": "tf", "topic": "Common resources", "stem": "Tuna swimming in international waters, which any boat may fish, are a public good.", "answer": false, "why": "Any boat may fish international waters, so the tuna are not excludable. But a tuna caught by one boat cannot be caught by another, so the tuna are rival. A public good must be neither excludable nor rival. A good that is rival but not excludable is a common resource, which is what the tuna are.", "key": "ch11-E4"}, {"id": "E5", "difficulty": "Easy", "type": "tf", "topic": "Free riders", "stem": "A homeowner who benefits from the streetlight on her block but refuses to contribute to the neighborhood fund that pays for it is a free rider.", "answer": true, "why": "A free rider is a person who receives the benefit of a good but avoids paying for it. The streetlight lights her block whether or not she contributes, because she cannot be excluded from its benefit. By refusing to pay, she gets the benefit for nothing, which is exactly what free riding means.", "key": "ch11-E5"}, {"id": "M1", "difficulty": "Moderate", "type": "mc", "topic": "Cost-benefit analysis", "stem": "Three residents would use a new footbridge over a creek. Dana values the bridge at $150, Eli at $90, and Fran at $60. No one else values it. All three can use the bridge at the same time without getting in each other's way. The bridge costs $250 to build. What should the town do?", "options": ["Build it only if each resident values it at $250 or more.", "Do not build it, because no single resident values it at more than $250.", "Build it, because the total benefit of $300 is greater than the cost of $250.", "Do not build it, because Fran values it at less than an equal one-third share of the cost."], "answer": 2, "why": "Because all three can use the bridge at the same time, the benefit to the town is the sum of their valuations, $150 + $90 + $60 = $300. That is greater than the $250 cost, so building it raises total surplus by $50. No single resident needs to value it above the full cost. How the cost is shared is a separate question; Fran's $60 being below an equal share of about $83.33 does not change whether the bridge is worth building.", "key": "ch11-M1"}, {"id": "M2", "difficulty": "Moderate", "type": "mc", "topic": "Efficient quantity of a public good", "stem": "A small town has three residents, Ana, Ben, and Cara. All three benefit from every streetlight on their road. The table shows how much each would pay for each additional streetlight. Each streetlight costs $30 to install. How many streetlights maximize total surplus?", "table": {"header": ["Streetlight", "Ana", "Ben", "Cara"], "rows": [["1st", "$30", "$25", "$15"], ["2nd", "$20", "$15", "$10"], ["3rd", "$12", "$10", "$6"], ["4th", "$5", "$4", "$1"]]}, "options": ["1", "2", "3", "4"], "answer": 1, "why": "All three residents benefit from every light at once, so the value of each light is the sum of what all three residents would pay for it. The 1st light is worth $30 + $25 + $15 = $70, the 2nd $20 + $15 + $10 = $45, the 3rd $12 + $10 + $6 = $28, and the 4th $5 + $4 + $1 = $10. Install a light whenever its total value is at least its $30 cost. The 1st ($70) and 2nd ($45) pass; the 3rd ($28) does not. So 2 streetlights maximize total surplus. Comparing each person's value with the cost separately would wrongly give only 1.", "key": "ch11-M2"}, {"id": "M3", "difficulty": "Moderate", "type": "mc", "topic": "Solving the Tragedy of the Commons", "stem": "Anyone may fish a large lake, and the fish stock is falling. The state caps the total catch and sells fishing permits; only permit holders may fish, up to the amount on their permit. Which property of the fish does the permit system change?", "options": ["It makes the fish excludable, because people without a permit may no longer fish.", "It makes the fish nonrival, because the total catch is capped.", "It turns the fish into a public good.", "It removes the externality by subsidizing fishing."], "answer": 0, "why": "Before the permits, anyone could fish, so the fish were not excludable; they were a common resource. The permits shut out anyone without one, which makes the fish excludable. The fish are still rival: a fish one permit holder catches cannot be caught by another, and capping the total does not change that. The fish therefore do not become nonrival or a public good, and a permit is a charge for access, not a subsidy.", "key": "ch11-M3"}, {"id": "M4", "difficulty": "Moderate", "type": "tf", "topic": "Public goods", "stem": "The total benefit to a town of a public good, such as a fireworks display, equals the largest amount any single resident would pay for it.", "answer": false, "why": "A public good is not rival, so every resident enjoys the same display at the same time. The total benefit is therefore the sum of what all residents would pay, not the largest single amount. This is why a public good can be worth providing even when no single person would pay its full cost.", "key": "ch11-M4"}, {"id": "M5", "difficulty": "Moderate", "type": "mc", "topic": "Tragedy of the Commons", "stem": "Anyone may fish a lake, which holds a limited stock of fish. When a fisher decides whether to add another boat, she ignores one cost of that decision. That cost is", "options": ["the price she receives for her fish.", "the cost of her own boat and fuel.", "the wages she pays her crew.", "the reduction in the catch of the other boats."], "answer": 3, "why": "The fish are a common resource: rival but not excludable. When she adds a boat, she counts her own costs and her own extra catch. She does not count the fish that the other boats now fail to catch. That loss falls on other people, so it is a negative externality, and because every fisher ignores it, the lake is overfished. This is the Tragedy of the Commons. The price of fish, her boat and fuel, and her crew's wages are all things she does take into account.", "key": "ch11-M5"}]}];
+const app = document.getElementById("app");
+const store = {
+  get(){ try { return JSON.parse(localStorage.getItem("ec111-practice") || "{}"); } catch(e){ return {}; } },
+  set(v){ try { localStorage.setItem("ec111-practice", JSON.stringify(v)); } catch(e){} }
+};
+let progress = store.get();
+let pick = {chapters: new Set(CHAPTERS.map(c => c.chapter)), level: "Both"};
+let run = null;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function chosen(){
+  const qs = [];
+  for (const c of CHAPTERS) if (pick.chapters.has(c.chapter))
+    for (const q of c.questions) if (pick.level === "Both" || q.difficulty === pick.level) qs.push({...q, chapter: c.chapter});
+  return qs.sort((a,b) => a.chapter - b.chapter || (a.difficulty === b.difficulty ? 0 : a.difficulty === "Easy" ? -1 : 1));
+}
+function home(){
+  run = null;
+  let h = `<h1>EC 111 Practice Questions</h1><p class="sub">Principles of Microeconomics. Choose the chapters and the level. Wrong answers come with an explanation; on multiple choice you get a second try first.</p><h2>Chapters</h2>`;
+  for (const c of CHAPTERS){
+    const tried = c.questions.filter(q => progress[q.key]).length;
+    const first = c.questions.filter(q => progress[q.key] === "first").length;
+    h += `<label class="row"><input type="checkbox" data-ch="${c.chapter}" ${pick.chapters.has(c.chapter) ? "checked" : ""}> <span><b>Chapter ${c.chapter}</b> ${esc(c.title)}</span><small>${tried} of ${c.questions.length} tried · ${first} right first time</small></label>`;
+  }
+  h += `<h2>Level</h2><div class="seg">` + ["Easy","Moderate","Both"].map(l => `<button data-lv="${l}" class="${pick.level === l ? "on" : ""}">${l}</button>`).join("") + `</div>`;
+  const n = chosen().length;
+  h += `<button class="go" id="start" ${n ? "" : "disabled"}>Start · ${n} question${n === 1 ? "" : "s"}</button>`;
+  h += `<p class="foot">Progress is saved in this browser only. <a href="#" id="reset">Clear my progress</a> · <a href="../">Back to the book</a></p>`;
+  app.innerHTML = h;
+  app.querySelectorAll("[data-ch]").forEach(b => b.onchange = () => { const ch = +b.dataset.ch; b.checked ? pick.chapters.add(ch) : pick.chapters.delete(ch); home(); });
+  app.querySelectorAll("[data-lv]").forEach(b => b.onclick = () => { pick.level = b.dataset.lv; home(); });
+  document.getElementById("start").onclick = () => { run = {qs: chosen(), i: 0, firstRight: 0}; show(); };
+  document.getElementById("reset").onclick = e => { e.preventDefault(); progress = {}; store.set(progress); home(); };
+}
+function show(){
+  const q = run.qs[run.i];
+  const opts = q.type === "mc" ? q.options : ["True","False"];
+  let h = `<div class="meta"><span>Chapter ${q.chapter} · ${q.difficulty} · ${q.type === "mc" ? "Multiple choice" : "True or false"}</span><span>${run.i + 1} of ${run.qs.length}</span></div>`;
+  h += `<div class="stem">${esc(q.stem)}</div>`;
+  if (q.table){
+    h += `<table><tr>${q.table.header.map(x => `<th>${esc(x)}</th>`).join("")}</tr>`;
+    for (const r of q.table.rows) h += `<tr>${r.map(x => `<td>${esc(x)}</td>`).join("")}</tr>`;
+    h += `</table>`;
+  }
+  opts.forEach((o, k) => h += `<button class="opt" data-k="${k}"><span class="l">${q.type === "mc" ? "abcdefgh"[k] + "." : ""}</span>${esc(o)}</button>`);
+  h += `<div id="fb"></div>`;
+  app.innerHTML = h; window.scrollTo(0, 0);
+  const right = q.type === "mc" ? q.answer : (q.answer ? 0 : 1);
+  let tries = 0;
+  const btns = [...app.querySelectorAll(".opt")];
+  btns.forEach(b => b.onclick = () => {
+    const k = +b.dataset.k; tries++;
+    const fb = document.getElementById("fb");
+    if (k === right || q.type === "tf" || tries >= 2){
+      btns.forEach(x => x.disabled = true);
+      btns[right].classList.add("right");
+      if (k !== right) b.classList.add("wrong");
+      const first = k === right && tries === 1;
+      if (first) run.firstRight++;
+      if (!progress[q.key] || first) progress[q.key] = first ? "first" : "tried";
+      store.set(progress);
+      const last = run.i === run.qs.length - 1;
+      fb.innerHTML = `<div class="msg ${k === right ? "good" : "bad"}">${k === right ? "Correct." : "Not correct. The answer is " + (q.type === "mc" ? "abcdefgh"[right] + "." : opts[right] + ".")}</div><div class="why">${esc(q.why)}</div><div class="nav"><button id="quit">Back to chapters</button><button class="on" id="next">${last ? "See my score" : "Next question"}</button></div>`;
+      document.getElementById("quit").onclick = home;
+      document.getElementById("next").onclick = () => { if (last) done(); else { run.i++; show(); } };
+    } else {
+      b.classList.add("wrong"); b.disabled = true;
+      fb.innerHTML = `<div class="msg bad">Not quite. Try once more.</div>`;
+    }
+  });
+}
+function done(){
+  app.innerHTML = `<h1>Finished</h1><p class="score">${run.firstRight} of ${run.qs.length} right first time</p><div class="nav"><button id="again">Same set again</button><button class="on" id="menu">Back to chapters</button></div>`;
+  document.getElementById("again").onclick = () => { run.i = 0; run.firstRight = 0; show(); };
+  document.getElementById("menu").onclick = home;
+}
+home();
+</script></body></html>
